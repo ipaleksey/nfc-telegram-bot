@@ -40,7 +40,7 @@ from aiogram.types import Message
 from aiogram.utils.markdown import hbold, hcode
 from dotenv import load_dotenv
 
-DB_PATH = "nfc_access.db"
+DB_PATH = os.getenv("DB_PATH", "/data/nfc_access.db")
 
 # ---------- Утилиты ----------
 
